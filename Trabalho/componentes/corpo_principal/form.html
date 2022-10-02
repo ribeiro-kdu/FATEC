@@ -1,0 +1,55 @@
+﻿<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script language="Javascript">
+        function Login() {
+            var user = document.frm_login.txt_usuario.value;
+            var email = document.frm_login.txt_usuario.value;
+            var senha = document.frm_login.txt_senha.value;
+
+            if ((user == "fatec" || email == "fatec@fatec") && senha == "123a") {
+                alert("Usuário logado com sucesso!!!");
+                window.location = "https://www.soportugues.com.br/";
+            } else {
+                alert("Conta inválida!!!");
+                document.frm_login.txt_usuario.value = "";
+                document.frm_login.txt_senha.value = "";
+                document.frm_login.txt_usuario.focus();
+            }
+        }
+
+       function Limpar() {
+           document.frm_login.txt_usuario.value="";
+           document.frm_login.txt_senha.value = "";
+           document.frm_login.txt_usuario.focus();
+        }
+
+    </script>
+
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <form name="frm_login">
+        <h2>Acessar nosso portal</h2><br />
+        <div class="form-item">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="txt_usuario" placeholder="Digite o seu email..." maxlength="40">
+        </div>
+
+        <div class="form-item">
+          <label for="lname">Senha</label>
+          <input type="password" id="password" name="txt_senha" placeholder="Senha" maxlength="20">
+        </div>
+
+        <div class="divide">
+            <input type="button" name="btn_login" value="Entrar" class="double" onClick="Login()">
+            <input type="button" name="btn_limpar" value="Limpar" class="double" onClick="Limpar()">
+        </div>
+        </form>
+      </div>
+</body>
+</html>

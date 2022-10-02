@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan';
+    background-color: #6874E8;
+}
+
+h1 {
+    margin: 50px 30px 15px 30px;
+    font-size: 20px;
+    color: #F7ACCF;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 20px;
+    padding: 0;
+    }
+
+a {
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+}
+
+li:hover, li:hover .material-icons{
+    color: #fff !important;
+}
+
+li {
+    padding: 10px;
+    line-height: 1;
+    width: 230px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all 0.5s;
+    color: #e8f0ff;
+}
+
+li:hover {
+    background-color: #392759;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px !important;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: #e8f0ff;;
+    margin-right: 10px;
+    transition: all 0.5s;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
